@@ -8,6 +8,8 @@ import React from 'react';
 import { Outlet, Navigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
+import logo from '../../assets/ehwebdev.png'; // Import your logo image
+
 /**
  * AuthLayout component
  * Contains only the authentication content
@@ -34,7 +36,7 @@ const AuthLayout = () => {
       <div className="auth-container">
         {/* Logo and app name */}
         <div className="auth-header">
-          <img src="/images/logo.png" alt="App Logo" className="auth-logo" />
+          <img src={logo} alt="App Logo" className="auth-logo" />
           <h1>Modern Auth</h1>
         </div>
         

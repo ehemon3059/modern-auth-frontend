@@ -7,6 +7,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 /**
  * Footer component
  * Page footer with information and links

@@ -41,6 +41,8 @@ const AppRoutes = () => {
     );
   }
 
+  console.log('Routes are rendering');
+
   return (
     <Routes>
       {/* Public routes with main layout */}

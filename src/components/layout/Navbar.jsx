@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Button from '../common/Button';
+import logo from '../../assets/ehwebdev.png'; // Import your logo image
 
 /**
  * Navbar component
@@ -43,7 +44,7 @@ const Navbar = ({ toggleSidebar }) => {
           
           {/* Logo and app name */}
           <Link to="/" className="navbar-brand">
-            <img src="/images/logo.png" alt="Logo" className="brand-logo" />
+            <img src={logo} alt="Logo" className="brand-logo" />
             <span className="brand-name">Modern Auth</span>
           </Link>
         </div>

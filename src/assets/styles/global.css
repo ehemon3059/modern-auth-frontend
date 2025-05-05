@@ -4,6 +4,14 @@
  */
 
 /* Reset and base styles */
+
+/**
+ * Global CSS Styles
+ * Base styles and CSS variables for the application
+ */
+
+/* Import component styles */
+@import url('./components/footer.css');
 * {
     margin: 0;
     padding: 0;

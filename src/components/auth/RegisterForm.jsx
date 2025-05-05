@@ -12,6 +12,8 @@ import Input from '../common/Input';
 import Button from '../common/Button';
 import Alert from '../common/Alert';
 
+
+import logo from '../../assets/ehwebdev.png'; // Import your logo image
 /**
  * RegisterForm component
  * Provides user registration functionality with validation
@@ -84,6 +86,7 @@ const RegisterForm = () => {
 
   return (
     <div className="register-form">
+      
       <h2>Create Account</h2>
       <p className="subtitle">Join us today!</p>
       

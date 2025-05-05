@@ -21,7 +21,8 @@ const SocialAuth = () => {
     sessionStorage.setItem('loginRedirect', window.location.pathname);
     
     // Redirect to Google OAuth endpoint
-    window.location.href = `${process.env.REACT_APP_API_URL}/auth/google`;
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+    window.location.href = `${apiUrl}/auth/google`;
   };
 
   /**
@@ -33,7 +34,8 @@ const SocialAuth = () => {
     sessionStorage.setItem('loginRedirect', window.location.pathname);
     
     // Redirect to Facebook OAuth endpoint
-    window.location.href = `${process.env.REACT_APP_API_URL}/auth/facebook`;
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+    window.location.href = `${apiUrl}/auth/facebook`;
   };
 
   return (

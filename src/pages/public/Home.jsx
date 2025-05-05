@@ -7,9 +7,13 @@ import Card from '../../components/common/Card';
 
 const Home = () => {
   const { isAuthenticated } = useAuth();
+  
+  console.log('Home component is rendering');
+  console.log('isAuthenticated:', isAuthenticated);
 
   return (
     <div className="home-page">
+      <h1>HOME PAGE IS LOADING</h1>
       {/* Hero section */}
       <section className="hero">
         <div className="hero-content">
