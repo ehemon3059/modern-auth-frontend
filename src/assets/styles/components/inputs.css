@@ -1,0 +1,68 @@
+/* ===== src/assets/styles/components/inputs.css ===== */
+/**
+ * Input Component Styles
+ * All input field variations and states
+ */
+
+/* Base Input Field */
+.form-field {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+  
+  .form-label .required-asterisk {
+    color: var(--error);
+    margin-left: var(--spacing-xs);
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    font-size: var(--text-base);
+    line-height: var(--line-height-normal);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    background-clip: padding-box;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+    height: var(--input-height);
+  }
+  
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: var(--text-light);
+    opacity: 1;
+  }
+  
+  /* Focus State */
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-select:focus {
+    outline: none;
+    border-color: var(--border-focus);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  /* Error State */
+  .form-input-error {
+    border-color: var(--error);
+  }
+  
+  .form-input.form-input-error:focus,
+  .form-textarea.form-input-error:focus,
+  .form-select.form-input-error:focus {
+    border-color: var(--error);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  }
